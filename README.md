@@ -18,3 +18,4 @@ Databases help for project
  8. controller sends the JavaBean object to the JSP
  9. JSP read the JavaBean object and display the 
  data according to the user specification 
+
