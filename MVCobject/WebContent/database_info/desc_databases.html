@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title> Database</title>
+</head>
+<body>
+
+<h1>MVC project Db</h1>
+<marquee> mvc_model Demo project by abhijeetKhire</marquee>
+<marquee>
+<a href="https://github.com/coderaudi/MVC_DEMO_MODEL-">Project Download github</a>
+</marquee>
+create database mvcpro;
+use mvcpro;
+
+<pre>
+
+create table users 
+( userid int(2) ,username varchar(20) unique,
+password varchar(20),
+email varchar(20),
+mobile bigint(2),
+address varchar(20) , primary key (userid) );
+
+insert into  users  values 
+( 1,'admin',
+ 'admin',
+'admin@gmail.com',
+985411542 ,
+'banglore' );
+
+select * from users;
++--------+----------+----------+-------------------+------------+----------+
+| userid | username | password | email             | mobile     | address  |
++--------+----------+----------+-------------------+------------+----------+
+|      1 | admin    | admin    | admin@gmail.com   | 1231231230 | banglore |
+|      2 | user     | 123      | admin@gmail.com   | 9874561230 | banglore |
+|      3 | audi     | audi     | audi@mvcadmin.com | 1245178451 | selu     |
++--------+----------+----------+-------------------+------------+----------+
+
+ desc users;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| userid   | int(2)      | NO   | PRI | 0       |       |
+| username | varchar(20) | YES  | UNI | NULL    |       |
+| password | varchar(20) | YES  |     | NULL    |       |
+| email    | varchar(20) | YES  |     | NULL    |       |
+| mobile   | bigint(2)   | YES  |     | NULL    |       |
+| address  | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+<marquee> mvc_model Demo project by abhijeetKhire</marquee>
+<marquee>
+<a href="https://github.com/coderaudi/MVC_DEMO_MODEL-">Project Download github</a>
+</marquee>
+</pre>
+</body>
+</html>
